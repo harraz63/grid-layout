@@ -1,8 +1,11 @@
+
 @media (max-width: 990px) {
   .container {
+    -ms-grid-columns: 1fr 1fr 1fr 25%;
     grid-template-columns: 1fr 1fr 1fr 25%;
+    -ms-grid-rows: (auto)[10];
     grid-template-rows: repeat(10, auto);
-    grid-template-areas:
+        grid-template-areas:
       "rotary"
       "mobile"
       "keyboard"
@@ -24,16 +27,25 @@
   }
 
   .mobile {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     .mobile-caption {
       width: 90%;
       margin: 40px 0;
     }
     .mobile-img {
-      align-self: auto;
+      -ms-flex-item-align: auto;
+          -ms-grid-row-align: auto;
+          align-self: auto;
       position: relative;
       left: -50px;
     }
@@ -48,9 +60,16 @@
   }
 
   .tv {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 30px 0;
     .tv-left {
       width: 90%;
@@ -93,9 +112,16 @@
   }
 
   .radio {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     .radio-left {
       position: relative;
